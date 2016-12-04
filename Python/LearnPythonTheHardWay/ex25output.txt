@@ -1,0 +1,33 @@
+
+user:LPTHW $ python 
+Python 2.7.10 (default, Oct 23 2015, 18:05:06) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ex25
+>>> sentence = "All Good things come to those who wait."
+>>> words = ex25.break_words(sentence)
+>>> words
+['All', 'Good', 'things', 'come', 'to', 'those', 'who', 'wait.']
+>>> sorted_words = ex25.sort_words(words)
+>>> sorted_words
+['All', 'Good', 'come', 'things', 'those', 'to', 'wait.', 'who']
+>>> ex25.print_first_word(words)
+All
+>>> ex25.print_last_word(words)
+wait.
+>>> sorted_words
+['All', 'Good', 'come', 'things', 'those', 'to', 'wait.', 'who']
+>>> sorted_words = ex25.sort_sentence(sentence)
+>>> sorted_words
+['All', 'Good', 'come', 'things', 'those', 'to', 'wait.', 'who']
+>>> ex.print_first_and_last(sentence)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ex' is not defined
+>>> ex25.print_first_and_last(sentence)
+All
+wait.
+>>> ex25.print_first_and_last_sorted(sentence)
+All
+who
+>>> 

@@ -1,0 +1,43 @@
+p, form {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.well {
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+h1, h2 {
+    margin-left: 45%;
+    margin-right: 45%;
+    text-align: center;
+}
+
+footer {
+    min-height: 10vh;
+    padding-top: 30px;
+    padding-bottom: 1px;
+    color: gray;
+    background-color: red;
+    
+}
+
+section {
+    min-height: 90vh;
+}
+
+body {
+    position: relative;
+    background-repeat: no-reapeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+img {
+    width: 100px; 
+    height: 100px;
+}

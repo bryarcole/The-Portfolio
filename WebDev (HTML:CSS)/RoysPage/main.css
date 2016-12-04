@@ -1,0 +1,16 @@
+body {
+    background-repeat: repeat-y;
+    background-size: cover;
+    
+}
+
+.jumbotron {
+    opacity: .4;
+    color: #D4AF37;
+    background-color: #000;
+}
+
+#myCarousel {
+    position: relative;
+}
+

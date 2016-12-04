@@ -1,0 +1,5 @@
+Complex.o: src/Complex.cpp src/../include/Complex.h
+main.o: src/main.cpp src/../include/Complex.h
+test_complex.o: tests/test_complex.cpp tests/../include/catch.hpp \
+  tests/../include/Complex.h
+test_main.o: tests/test_main.cpp tests/../include/catch.hpp

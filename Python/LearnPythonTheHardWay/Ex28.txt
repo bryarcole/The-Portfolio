@@ -1,0 +1,74 @@
+Last login: Thu Jan 21 17:28:15 on ttys000
+Bryars-MacBook-Pro:~ BryarCole$ python
+Python 2.7.10 (default, Oct 23 2015, 18:05:06) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> True and True
+True
+>>> False and True
+False
+>>> 1 == 1 and 2 == 1
+False
+>>> "test" == "test"
+True
+>>> 1 == 1 or 2 != 1
+True
+>>> True and 1 = 1 #We get an error here because I’m missing a comparison needs
+#two eqaul signs, right now python thinkings im trying to assign one to the number 
+#one
+  File "<stdin>", line 1
+SyntaxError: can't assign to operator
+>>> True and 1 == 1 #fixed and ran here. 
+True
+>>> False and 0 != 0
+False
+>>> True or 1 == 1
+True
+>>> "test" == "testing"
+False
+>>> 1 != 0 and 2 == 1
+False
+>>> "test" != 1
+True
+>>> not (True and False)
+True
+>>> not (1 == 1 and 0!=1)
+False
+>>> not (10 == 1 or 1000 == 1000)
+False
+>>> not (1 != 10 or 3 == 4)
+False
+>>> not ("testing" == "testing" and "Zed" == "Cool Guy")
+True
+>>> 1 == 1 and (not ("testing" == 1 or 1 == 0)
+... )
+True
+>>> "Chunky" == bacon and (not(3 == 4 or 3 == 3)) #Forgot to put bacon in quotes
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+
+NameError: name 'bacon' is not defined
+>>> "Chunky" == "bacon" and (not(3 == 4 or 3 == 3))#Fixed here. 
+False
+>>> 3 == 3 and (not ("testing" == "testing" or "Python" == "Fun))
+  File "<stdin>", line 1
+    3 == 3 and (not ("testing" == "testing" or "Python" == "Fun)) #forgot second #quote
+                                                                 ^
+SyntaxError: EOL while scanning string literal
+>>> 3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))
+False
+
+#Figure these out
+>>> #lets get tricky
+... one = 1
+>>> two = 2
+>>> three = 3
+>>> three == 3
+True
+>>> one == 1 or "two" == 2
+True
+>>> "three" == 3
+False
+>>> not ("one" == 1) and (three == 3)
+True
+>>> 

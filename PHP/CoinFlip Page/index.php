@@ -18,7 +18,7 @@
                 echo "<div class=\"coin\">T</div>";
             }
             else {
-                tailsCount = 0;
+                $tailsCount = 0;
                 echo "<div class=\"coin\">H</div>";
             }
         }

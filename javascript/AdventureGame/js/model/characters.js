@@ -7,14 +7,17 @@ var character = function(name, age, des){
 
 
 character.prototype.verify = function(){
-    console.log("You're character name is ", this.name, "You're characters age is, ", this.age, "/nAnd finally youre characters class is ", this.des);
+    $(".card-block").append("<p>","You're character name is ", this.name, "You're characters age is, ", this.age, "And finally youre characters class is ", this.des, "</p>");
 };
 
 character.prototype.hunter = function(){
     this.classItem = "Cloak";
     this.statement = function(){
-        $("h1").text("Now You're a hunter, now you have a", this.classItem, "");
+        $(".card-block").text("Now You're a hunter, now you have a", this.classItem, "");
     };
+    this.imageShow = function(){
+        $()
+    }
 };
 
 character.prototype.warlock = function(){

@@ -9,7 +9,7 @@
   -moz-transform: $transformation;
   -ms-transform: $transformation;
   -o-transform: $transformation;  
-}
+};
 
 @mixin Anton($weight){
     font-family: 'Anton', sans-serif;
@@ -19,10 +19,10 @@
 @mixin Jura($weight){
     font-family: 'Jura', sans-serif;
     font-weight: $weight;
-}
+};
 
 @mixin transition-duration($duration){
     transition-duration: $duration;
     -webkit-transition-duration: $duration;
     -moz-transition-duration: $duration;
-}
+};

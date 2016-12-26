@@ -49,8 +49,6 @@ function newGame(){
             if(hitRate > 30){
                 console.log("You got a hit on him!");
                 totalDamage += damage;
-                console.log(hitRate);
-                console.log(totalDamage)
                 if(totalDamage > Golg.health){
                     console.log("Nice you killed Golgoroth!");
                     fighting = false;

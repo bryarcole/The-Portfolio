@@ -1,8 +1,8 @@
-Title: Adventure Game 
+#Title: Adventure Game 
 ---------------------------------
 This is an adventure game that I making for my codeAcedemy project.
 
-User Stories:
+##User Stories:
 
 * The game can't be the same every time on playthrough.
 * Different outcomes based on different choices in the game.
@@ -13,10 +13,10 @@ User Stories:
 ---------------------------------
 
 -----
-GAME SET 
+#GAME SET 
 -----
 
-Characters 
+##Characters 
 -----------
 - You (Main Character) 
 - Bad Guy? (Antongonist)
@@ -25,7 +25,7 @@ Characters
 - Boss 2 (Challenge 2)
 
 ----------------------
-Class options
+##lass options
 ----------------------
 
 Hunter (Special prop is the Cape)

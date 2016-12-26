@@ -39,34 +39,33 @@ function newGame(){
     function firstBoss(){
         $(".character-card").hide();
         var fighting = true;
-        var hitRate = Player.accuracy;
+        var hitRate = Math.floor(Math.random(Player.accuracy) *100);
         var damage = Player.damagePer;
         var totalDamage = 0;
+        var bossDamage = 0;
         var playerHealth = Player.health + Player.armour + (Player.agility / 2);
         var Golg = new Golgoroth();
 
         while(fighting){
-            if(hitRate > 30){
+            if(hitRate > 30){ //Decrease to make easier, Increase to make more difficult
                 console.log("You got a hit on him!");
                 totalDamage += damage;
                 if(totalDamage > Golg.health){
                     console.log("Nice you killed Golgoroth!");
                     fighting = false;
                 }else{
-                    hitRate = Player.accuracy;
-                    console.log(totalDamage)
+                    hitRate = Math.floor(Math.random(hitRate) *100);
+                    console.log(hitRate);
                 };
             }else{
                 console.log("You missed, Golg attacks!");
-                Golg.attack -= playerHealth;
-                console.log(totalDamage);
-                if(playerHealth <= 0){
+                bossDamage += Golg.attack;
+                if(bossDamage > playerHealth){
                     console.log("Oh no Golg killed you!");
-                    console.log(totalDamage)
+                    console.log(totalDamage);
                     fighting = false;
                 }else{
-                    hitRate = Player.accuracy;
-
+                    hitRate = Math.floor(Math.random(hitRate) *100);
                 };
             };
         }
@@ -82,5 +81,32 @@ function newGame(){
 
 };
 
+/*
+
+------- Boss fight engine ----------
+        while(fighting){
+            if(hitRate > 30){
+                console.log("You got a hit on him!");
+                totalDamage += damage;
+                if(totalDamage > badguy.health){
+                    console.log("Nice you killed BadGuy!");
+                    fighting = false;
+                }else{
+                    hitRate = Math.floor(Math.random(hitRate) *100);
+                    console.log(hitRate);
+                };
+            }else{
+                console.log("You missed, Badguy attacks!");
+                bossDamage += Badguy.attack;
+                if(bossDamage > playerHealth){
+                    console.log("Oh no Badguy killed you!");
+                    console.log(totalDamage);
+                    fighting = false;
+                }else{
+                    hitRate = Math.floor(Math.random(hitRate) *100);
+                };
+            };
+        }
+*/
 
 

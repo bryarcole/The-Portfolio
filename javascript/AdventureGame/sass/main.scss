@@ -16,22 +16,38 @@ body {
         background-color: black;
         @include Anton(400);
         letter-spacing: 1.5px;
-        &hover{
+        @include transition-duration(2s);
+        &:hover{
             color:blue;
             background-color: white;
-            transition-duration: .5;
+            @include transition-duration(2s);
         }
 
     }
 
     .game-main {
         margin-top:50px;
-        background-color: $transparent-black; 
+        background-color: $transparent-black;
+        @include transition-duration(2s);
+        &:hover{
+            background-color: $transparent-white;
+            color: black;
+            @include transition-duration(2s);
+        } 
         padding: 2em;
         font-size: 3em;
-        @include Jura();
+        @include Jura(300);
         .form-group {
             color:white;
+            input{
+                color:blue;
+            }
+        }
+        p {
+            color:white;
+        }
+        img {
+            @include dimensions(370px, 450px);
         }
     }
 }

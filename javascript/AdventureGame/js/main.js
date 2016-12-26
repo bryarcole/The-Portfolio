@@ -1,7 +1,7 @@
 var main = function(){
 
     $(".btn").click(function(){
-        gameStart();
+        newGame();
     });
 };
 

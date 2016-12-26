@@ -16,7 +16,13 @@
     font-weight: $weight;
 };
 
-@mixin Jura(){
+@mixin Jura($weight){
     font-family: 'Jura', sans-serif;
+    font-weight: $weight;
 }
 
+@mixin transition-duration($duration){
+    transition-duration: $duration;
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+}

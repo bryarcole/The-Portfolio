@@ -1,5 +1,7 @@
 //Create Objet or player 
 
+
+//Buttons
 var $button = "<div class='btn btn-default'>Click here to get things started!</div>";
 var $continueButton = "<div class='btn btn-default continue'>Click here to get things started!</div>";
 var $fightButton = "<div class='btn btn-default fight'>Click here to start the show!</div>";

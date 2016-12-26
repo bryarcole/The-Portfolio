@@ -1,6 +1,9 @@
 #Title: Adventure Game 
 ---------------------------------
-This is an adventure game that I making for my codeAcedemy project.
+This is an adventure game that I making for my codeAcedemy project. Not inttended to be an expression of styling or design. 
+My main purpose here is to show how objects can be extended and can add methods and properties to other "parent" objects.
+User naviagtes the game and picks a "Class" then a "Weapon" then uses these properties to "fight" bosses via comparative operaters and Math funtions.
+
 
 ##User Stories:
 
@@ -19,7 +22,6 @@ This is an adventure game that I making for my codeAcedemy project.
 ##Characters 
 -----------
 - You (Main Character) 
-- Bad Guy? (Antongonist)
 - Old man (Skill Acquistion)
 - Boss 1 (Challenge 1)
 - Boss 2 (Challenge 2)
@@ -28,8 +30,8 @@ This is an adventure game that I making for my codeAcedemy project.
 ##lass options
 ----------------------
 
-Hunter (Special prop is the Cape)
-Titan (Special prop is )
-Warlock (Special prop is book )
+Hunter (Special prop is the Cloak)
+Titan (Special prop is Mark)
+Warlock (Special prop is Bond )
 ----------------------
 

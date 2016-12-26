@@ -1,5 +1,6 @@
 var main = function(){
-    $("h1").click(function(){
+
+    $(".btn").click(function(){
         gameStart();
     });
 };

@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+
+        <title>Game by Bryar Cole</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/controllers/controller.js"></script>
         <script src="js/model/characters.js"></script>
+        <script src="js/controllers/controller.js"></script>
         <script src="js/main.js"></script>
 
     </head>
@@ -14,10 +16,22 @@
             <section class="game-main container">
                 <form role="form">
                     <div class="form-group">
-                        
+                        <label for="character-name">Enter the name of your Chcater here</label>
+                        <input type="text" id="character-name">
                     </div>
+                    <div class="form-group">
+                        <label for="character-class">Enter the name of your Class here</label>
+                        <input type="text" id="character-class">
+                    </div>
+                    <div class="form-group">
+                        <label for="character-age">Enter the name of your age here</label>
+                        <input type="text" id="character-age">
+                    </div>
+
+                    <div class="btn btn-default">Click here to get things started!</div>                    
                 </form>
             </section>
+            <p class="input-result"></p>
 
         </div>
     </body>

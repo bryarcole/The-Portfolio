@@ -1,0 +1,38 @@
+@import "assist/mixins";
+@import "assist/variables";
+@import "assist/placeholders";
+@import url('https://fonts.googleapis.com/css?family=Anton|Jura');
+
+
+body {
+    background-image: url($main-bg-img);
+      object-fit: cover;
+    @include dimensions(100%, 100%);
+    text-align: center;
+
+    h1 {
+        text-align: center;
+        color: red;
+        background-color: black;
+        @include Anton(400);
+        letter-spacing: 1.5px;
+        &hover{
+            color:blue;
+            background-color: white;
+            transition-duration: .5;
+        }
+
+    }
+
+    .game-main {
+        margin-top:50px;
+        background-color: $transparent-black; 
+        padding: 2em;
+        font-size: 3em;
+        @include Jura();
+        .form-group {
+            color:white;
+        }
+    }
+}
+

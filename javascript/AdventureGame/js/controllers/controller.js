@@ -5,8 +5,6 @@ function gameStart(){
     var characterAge = $("#character-age").val();
     var player = new character(characterName, characterAge, characterClass);
     
-    player.verify();
-
     if(characterClass == "Hunter"){
         player.hunter();
     }else if(characterClass == "Titan"){
@@ -16,5 +14,7 @@ function gameStart(){
     };
 
     player.statement();
-    console.log(player.classItem);
+    return player;
+
 };
+

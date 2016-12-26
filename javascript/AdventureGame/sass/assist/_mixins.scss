@@ -1,0 +1,22 @@
+@mixin dimensions($width, $height){
+    width: $width;
+    height: $height;
+};
+
+@mixin transform($transformation) {
+  transform: $transformation;
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;  
+}
+
+@mixin Anton($weight){
+    font-family: 'Anton', sans-serif;
+    font-weight: $weight;
+};
+
+@mixin Jura(){
+    font-family: 'Jura', sans-serif;
+}
+

@@ -7,7 +7,7 @@ if/elif/else statements
 from time import sleep, strftime
 
 
-USERNAME = 'Bryar'
+USERNAME = 'GRACEFACE'
 
 calendar = {}
 
